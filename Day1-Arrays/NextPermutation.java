@@ -1,4 +1,18 @@
 
+// Intution 
+
+// https://www.interviewbit.com/blog/next-permutation-problem/ 
+
+// Time  - O(N) , space  - O(1)
+// Algorithm :
+
+//     Traverse the array from end and find the first index, idx such that A[i] < A[i + 1].
+//     Again traverse the array from the end and find the first index, ind such that A[i] > A[idx].
+//     Swap A[idx] and A[ind].
+//     Reverse the array from idx + 1 till N.
+//     The base case would be, if the array is in decreasing order, no next permutation will be found, hence return the array in sorted order.
+
+
 public class NextPermutation {
 
     public void nextPermutation(int[] nums) {
