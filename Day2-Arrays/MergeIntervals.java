@@ -9,7 +9,8 @@
     class MergeIntervals {
         public int[][] merge(int[][] intervals) {
             
-           Arrays.sort(intervals, (a,b)-> Integer.compare(a[0],b[0])); //  sorted on the basis of            starting index
+            //  sorted on the basis of starting index
+           Arrays.sort(intervals, (a,b)-> Integer.compare(a[0],b[0]));   
             
            ArrayList<int[]> list = new ArrayList<>();
             
@@ -32,6 +33,7 @@
            }
            }
             
+            // return arraylist as 2-d array
            return list.toArray(new int[list.size()][]);
              
             
